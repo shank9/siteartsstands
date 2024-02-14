@@ -511,7 +511,7 @@ input.form-control {
 .container {
     overflow: hidden;
     .slider {
-      animation: slidein 30s linear infinite;
+      animation: slidein 100s linear infinite;
       white-space: nowrap;
       .logos {
         width: 10%;
