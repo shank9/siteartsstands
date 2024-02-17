@@ -506,49 +506,6 @@ input.form-control {
     margin-left: 6rem;
 }
 
-/* Carrossel */
-
-.container {
-    overflow: hidden;
-    .slider {
-      animation: slidein 100s linear infinite;
-      white-space: nowrap;
-      .logos {
-        width: 10%;
-        margin-left: 2rem;
-        display: inline-block;
-        margin: 0px 0;
-        .fab {
-          width: calc(100% / 5);
-          animation: fade-in 0.5s 
-            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-        }
-      }
-    }
-  }
-  
-  @keyframes slidein {
-    from {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  .highlight {
-    text-shadow: 3px 3px #c7559c;
-  }
-
   /* Galeria de Imagens */
 
  
@@ -710,3 +667,30 @@ input.form-control {
     color: #fff
 }
 
+/* Logo Carousel */
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+.logo_wrapper {
+	width: 100%;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo_active img {
+    width: 120px !important;
+}
+
+.logo_active .owl-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-carousel .owl-stage {
+	display: flex;
+	align-items: center;
+}
