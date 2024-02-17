@@ -694,3 +694,8 @@ button:focus, input:focus, textarea:focus {
 	display: flex;
 	align-items: center;
 }
+
+.highlight 
+    {
+        text-shadow: 3px 3px #c7549c;
+      }
